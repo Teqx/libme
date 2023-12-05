@@ -12,14 +12,6 @@ import SwiftData
 struct LibmeApp: App {
   @AppStorage("isDarkMode")
   var isDarkMode = true
-  let modelContainer: ModelContainer
-  init() {
-    do {
-      modelContainer = try ModelContainer(for: Book.self)
-    } catch {
-      fatalError("Could not start ModelContainer.")
-    }
-  }
 
   var body: some Scene {
     WindowGroup {

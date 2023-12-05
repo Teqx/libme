@@ -21,5 +21,5 @@ Rubric:
 * Code organization
      * Since I used SwiftData, I used iOS 17's @Observable instead of ObservableObject. The same, except you no longer need @Published. @State instead of @StateObject for the instance. @Bindable (or nothing) instead of @ObservedObject.
      * SwiftLint passes
-* No tests as of now :(
+* Tests have been added. Unit tests have 25% CC, and the UI test has between 85 and 92% (due to Onboarding view present or not)
 * App includes a custom app icon, onboarding screen (with animation), custom display name, and styled text.

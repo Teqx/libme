@@ -50,6 +50,7 @@ struct BookInfoView: View {
         .font(.subheadline)
         .monospaced()
         .padding(.vertical, 10)
+        .accessibilityIdentifier("Published label")
       Spacer()
       Button {
         modelContext.insert(
