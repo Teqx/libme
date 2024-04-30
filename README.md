@@ -1,10 +1,8 @@
 Libme, an OpenLibrary client to store the books you have on your bookshelf.
 
-Rubric:
-* No 3rd party frameworks
-* Has a static SwiftUI launch screen
-* Features are completed
-* App has two screens with Lists
+[Demo video](https://www.loom.com/share/6b93067367034e3fbae0bf1fa20555fb?sid=556a9fbd-754a-441d-8eef-3ea754a241cd)
+
+* App has two screens
     * Each tab has a list
 * In the Bookshelf list, the list row has a title, subtitle, and image
     * Both lists navigate to a detail view (search tab should probably show a sheet instead)
@@ -13,13 +11,11 @@ Rubric:
 * The app makes two network calls: one for the search query and one for downloading the cover images
     * No API key needed with OpenLibrary
     * No extreme request limit
-* The app hopefully handles all typical errors with a message on the search screen
+* The app handles typical errors with a message on the search screen
 * The app uses SwiftData to save the books to the bookshelf. User defaults are used for persistent mechanics (first run view, color scheme switcher, tab preference)
-* MainActor is used for methods that need it. async/await is used for networking
-* User should see text if the views are empty
-* Screens seem to work on different iPhone sizes
+* Screens work on different iPhone sizes
 * Code organization
-     * Since I used SwiftData, I used iOS 17's @Observable instead of ObservableObject. The same, except you no longer need @Published. @State instead of @StateObject for the instance. @Bindable (or nothing) instead of @ObservedObject.
+     * Since I used SwiftData, I used iOS 17's @Observable instead of ObservableObject.
      * SwiftLint passes
-* Tests have been added. Unit tests have 25% CC, and the UI test has between 85 and 92% (due to Onboarding view present or not)
-* App includes a custom app icon, onboarding screen (with animation), custom display name, and styled text.
+* Tests have been added. Unit tests have 25% CC, and the UI test has between 85 and 92% (due to Onboarding view being present)
+
